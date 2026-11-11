@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #202638;
+  line-height: 1.5;
+}
+
+.header {
+  text-align: center;
+  padding: 55px 20px 35px;
+}
+
+.header h1 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  color: #26345b;
+}
+
+.header p {
+  color: #687187;
+  font-size: 15px;
+}
+
+.projects {
+  width: min(1000px, 90%);
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e6e9f1;
+  box-shadow: 0 5px 18px rgba(30, 45, 80, 0.06);
+}
+
+.project-card img {
+  display: block;
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  background: #e9edfa;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-details h2 {
+  font-size: 19px;
+  margin-bottom: 14px;
+  color: #26345b;
+}
+
+.concept-title {
+  font-size: 12px;
+  font-weight: bold;
+  color: #687187;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 9px;
+}
+
+.concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.concepts span {
+  background: #eef0ff;
+  color: #5146a5;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.project-details a {
+  display: inline-block;
+  background: #5146c8;
+  color: white;
+  text-decoration: none;
+  padding: 9px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.project-details a:hover {
+  background: #39319b;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #7b8498;
+  font-size: 12px;
+}
+
+@media (max-width: 800px) {
+  .projects { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 540px) {
+  .projects { grid-template-columns: 1fr; }
+  .header h1 { font-size: 28px; }
+}
+
+/* LEARNING JOURNEY SECTION */
+
+.learning-section {
+    padding: 45px 8%;
+    background: #f3f1ff;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    color: #30265c;
+    margin-bottom: 10px;
+}
+
+.section-heading p {
+    color: #666;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learning-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #e7e2ff;
+    transition: 0.3s;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(70, 50, 120, 0.12);
+}
+
+.learning-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.learning-card h3 {
+    color: #49358b;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.learning-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* PROJECT SECTION */
+
+.projects-section {
+    padding: 45px 8%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+    .learning-grid,
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .learning-grid,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+/* ABOUT ME SECTION */
+
+.about-section {
+    padding: 35px 8%;
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #fff8f1;
+    padding: 30px;
+    border-radius: 16px;
+    border-left: 5px solid #c97c5d;
+}
+
+.about-icon {
+    font-size: 55px;
+    background: white;
+    padding: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.about-content h2 {
+    color: #49358b;
+    margin-bottom: 12px;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.learning-tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #eee8ff;
+    color: #49358b;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width: 550px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
